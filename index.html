@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PAYDAY 2 & 3 Mod - Microsoft Jacket </title> 
+	<style>
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(200px); /* Optional slide-in effect */
+      transition: opacity 1.5s ease-out, transform 12.0s ease-out;
+    }
+
+    .visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  </style>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./website.css"/>
+   </head>
+<body onload="initializeScrollFade()">
+
+  <script>
+    function initializeScrollFade() {
+      const hiddenElements = document.querySelectorAll('.hidden');
+
+      function handleScroll() {
+        hiddenElements.forEach(element => {
+          const rect = element.getBoundingClientRect();
+          const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+          // Check if element is in the viewport
+          if (rect.top <= windowHeight - 50) { // Add a buffer of 50px
+            element.classList.add('visible');
+            element.classList.remove('hidden');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Call once to show elements already in view
+    }
+  </script>  <nav>
+    <div class="menu">
+      <div class="logo">
+       <par>uncensored memes for real gamers</par>
+      </div>
+	  <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://steamcommunity.com/id/ICraaZZyM4N/">Contact</a></li>
+        <li><a href="https://www.youtube.com/watch?v=4GF6GBYqgFk">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Microsoft Jacket mods for PAYDAY games</div>
+    <div class="sub_title">For The Real Ones Only</div>
+    <div class="btns">
+	
+<button onclick="window.location.href='https://www.dropbox.com/scl/fi/malmlp6c3m32bf9fhf47d/1541_Microsoft-Jacket-Official-29thAugust2020-Last-Update_Build-11.rar?rlkey=catdkhoqc19nbgn9anoclibwb&st=v8pn3n3d&dl=1';">Download mod for PAYDAY 2</button>
+<button onclick="window.location.href='https://www.dropbox.com/scl/fi/wsceg097hl4icjdzxas1u/Microsoft-Jacket.rar?rlkey=5rgkofkvrj8psjolnqan3gi0u&st=5is4wsj9&dl=1';">Download mod for PAYDAY 3</button>
+
+    </div>
+	
+  </div>
+  <div class = "textarea">
+  <div class="hidden">
+<div class="title" id=about>About these mods</div>
+	
+  
+      <div class="sub_title">PAYDAY 3</div>
+	  
+<div class="payday3">
+  <div style="width: 560px; height: 315px; float: none; clear: both; margin: auto;">
+  <embed
+    src="https://www.youtube.com/embed/4GF6GBYqgFk"
+    wmode="transparent"
+    type="video/mp4"
+    width="100%" height="100%"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen
+  >
+</div>
+ <par>The idea was to replace annoying Shade character with something more suiting, hence Bain is dead I decided to add Microsoft Jacket into PAYDAY 3.<br>
+ hence replacing an already existing heister didn't seem proper, I decided to replace Shade instead.
+ <br><br>
+</div>  <div class="hidden">
+What does this mod bring into the game?:<br><br>
+
+Over 1700 custom voice lines replacing Shade's<br>
+Custom visual asset for main menu replacing Shade completely.<br>
+Custom radio mic clicks<br>
+Unique and original funny memes<br><br></div><div class="hidden">
+    <!-- Slideshow container -->
+<div class="slideshow1">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/3.jpeg" style="width:100%">
+  </div>
+  
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/4.jpeg" style="width:100%">
+  </div>
+<div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+</div></div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script><div class="hidden">
+Known issues:<br><br>
+
+Subtittles of contractor do not work.<br>
+Some audio files might be louder or quiet than others<br>
+Not all voice lines have been replaced.<br>
+Only main storyline heists have been replaced. (Legacy heists and DLC were not made yet.)<br>
+Planned features:<br><br>
+
+Replace every single voice line that Shade has.<br>
+Replace tittle in main menu from 'Shade' to "Jacket'<br>
+Make custom subtittles if possible.<br>
+Fix current bugs and issues that may exist<br>
+These features will be made if enough people care about this mod and show us the feedback that we need, hence the current state of the game is - dead. <br> Hoping this is enterating for you people and can bring the joy and wonders that you've once had when it came to this game before it flopped. I only did it for the memes anyway.
+<br><br>
+Please let us know if you want this to be updated and fixed if necceasry. <br> For now you may report bugs etc. in the <a href="https://www.youtube.com/watch?v=4GF6GBYqgFk">YouTube comments</a>
+<br><br>
+
+Current dvelopers: <a href="https://steamcommunity.com/id/SeasTV/">Seas</a>, <a href="https://steamcommunity.com/id/ICraaZZyM4N/">ICraaZZyM4N</a><br><br>
+
+
+Have fun!</div><div class="hidden">
+</div>
+      <div class="sub_title">PAYDAY 2</div>
+  <div class="slideshow2">
+  <!-- Full-width images with number and caption text -->
+   <div class="mySlides2 fade">
+    <div class="numbertext2">1 / 5</div>
+    <img src="images/5.png" style="width:50%">
+  </div>
+  <div class="mySlides2 fade">
+    <div class="numbertext2">2 / 5</div>
+    <img src="images/6.png" style="width:50%">
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext2">3 / 5</div>
+    <img src="images/7.png" style="width:50%">
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext2">4 / 5</div>
+    <img src="images/8.png" style="width:50%">
+  </div>
+  
+  
+  <div class="mySlides2 fade">
+    <div class="numbertext2">5 / 5</div>
+    <img src="images/1.png" style="width:50%">
+  </div>
+<div>
+  <!-- Next and previous buttons -->
+  <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+<br>
+</div>
+<script>
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  let dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex2-1].style.display = "block";
+  if (dots.length > 0) {
+    dots[slideIndex2-1].className += " active";
+  }
+}
+</script>
+
+Links to the <a href="https://www.youtube.com/watch?v=YNokUYJlbN4">original trailer</a>
+and the <a href="https://www.youtube.com/watch?v=mV5Me1Py0cU">last update</a>.<br>
+
+  Description: A mod to put Microsoft Sam into the game. Or cheef. Whatever you wanna call him. This replaces Jacket.<br>
+Developers: <a href="https://steamcommunity.com/id/nbgmusic/">NBG</a>, <a href="https://steamcommunity.com/id/higgueisstupid/">LordHiggi</a>, <a href="https://steamcommunity.com/id/ICraaZZyM4N/">ICraaZZyM4N</a><br>
+Notes: Game must be played in English for the mod to work properly. Any line that hasn't been edited cannot be edited as they are OGG, so you'll hear silence instead.<br>
+Mod is gonna be discontinued for now, unless overkill decides to add new lines for Jacket. But I highily doubt that.<br><br>
+
+SOI SOI SOI
+<br><br>
+<br>
+<br>
+</div>
+</div>
+</body>
+</html>
